@@ -1,0 +1,32 @@
+.App {
+  font-family: "sans-serif";
+  text-align: center;
+}
+h1 {
+  font-family: "Montserrat", "sans-serif";
+  color: rgb(66, 165, 245);
+  font-size: 200%;
+  position: relative;
+  bottom: 12px;
+  right: 3px;
+}
+
+button {
+  color: rgb(66, 165, 245);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  border-width: 1px;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  color: white;
+  background: rgba(66, 165, 245, 0.5);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Arial";
+}
