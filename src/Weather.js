@@ -7,6 +7,8 @@ export default function Weather() {
       <h1>What's the Weather</h1>
 
       <Search />
+      <br />
+      <a href="https://github.com/Jan-etta/weather-app-react">Coded by Jan-etta </a>
     </div>
   );
 }
