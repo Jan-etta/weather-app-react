@@ -1,4 +1,5 @@
 import "./styles.css";
+
 import React, { useState } from "react";
 import axios from "axios";
 export default function Weather() {
@@ -10,9 +11,11 @@ export default function Weather() {
     setLoaded(true);
     setWeather({
       city: response.data.name,
+      description: response.data.weather[0].description,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
-      humidity: response.data.main.humidity
+      humidity: response.data.main.humidity,
     });
   }
 
@@ -40,9 +43,14 @@ export default function Weather() {
   if (loaded) {
     return (
       <div>
-        <h2> {weather.city} </h2>
         {form}
+        <h2>
+          {" "}
+          {weather.city} <img src={weather.iconUrl} width={60} alt="icon" />{" "}
+          
+        </h2>
         <ul>
+          <li className="Capitalize">{weather.description}</li>
           <li>Temperature: {weather.temperature}°C</li>
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {weather.wind}km/h</li>
