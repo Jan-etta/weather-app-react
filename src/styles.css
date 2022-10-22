@@ -6,7 +6,7 @@ h1 {
   font-family: "Montserrat", "sans-serif";
   color: rgb(66, 165, 245);
   font-size: 200%;
-  position: relative;
+  
   bottom: 12px;
   right: 3px;
 }
@@ -29,4 +29,7 @@ ul {
   margin: 0 auto;
   padding: 10px;
   font-family: "Arial";
+}
+.Weather {
+  border: 1px solid rgba(66, 165, 245, 0.5)
 }
