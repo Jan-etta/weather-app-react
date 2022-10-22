@@ -1,7 +1,7 @@
 import "./styles.css";
 import React from "react";
 import Search from "./Search";
-import CurrentDay from "./CurrentDay";
+
 export default function Weather() {
   return (
     <div className="Weather container">

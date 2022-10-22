@@ -1,5 +1,5 @@
 import "./styles.css";
-
+import CurrentDay from "./CurrentDay";
 import React, { useState } from "react";
 import axios from "axios";
 export default function Weather() {
@@ -16,6 +16,7 @@ export default function Weather() {
       temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -49,12 +50,10 @@ export default function Weather() {
             <h2>
               {" "}
               {weather.city} <img src={weather.iconUrl} width={60} alt="icon" />{" "}
+              <small>
+                <CurrentDay date={weather.date} />
+              </small>
             </h2>
-            <p>
-              time: 03:00
-              <br />
-              date: mon 17th oct 2022
-            </p>
           </div>
           <div className="col-5">
             <ul>
