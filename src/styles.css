@@ -37,3 +37,7 @@ ul {
 .Capitalize {
   text-transform: capitalize;
 }
+
+.units {
+  font-size: 20px;
+}
