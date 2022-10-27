@@ -31,7 +31,9 @@ ul {
   font-family: "Arial";
 }
 .Weather {
-  border: 1px solid rgba(66, 165, 245, 0.5)
+  border: 1px solid rgba(66, 165, 245, 0.5);
+  margin: 20px 0px 20px 0px;
+
 }
 
 .Capitalize {
