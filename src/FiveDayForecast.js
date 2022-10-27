@@ -34,8 +34,8 @@ if (loaded) {
           })}
         </div>
       </div>
-      </div>
-    );
+    </div>
+  );
 } else {
  let longitude = props.coordinates.lon;
  let latitude = props.coordinates.lat;
