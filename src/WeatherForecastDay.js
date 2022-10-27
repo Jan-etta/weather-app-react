@@ -3,7 +3,6 @@ import Icon from "./Icon";
 
 export default function WeatherForecastDay(props) {
 
-{
   function maxTemperature() {
     let temperature = Math.round(props.data.temp.max);
     return `${temperature}°`;
@@ -37,4 +36,4 @@ export default function WeatherForecastDay(props) {
       </div>
     </div>
   );
-}}
+}
