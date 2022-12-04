@@ -54,7 +54,7 @@ export default function Weather() {
           <div className="col-7">
             <h2>
               {weather.city} {weather.temperature}
-              <TemperatureConvert celcius={weather.temperature} />
+              <TemperatureConvert celsius={weather.temperature} />
               <img src={weather.iconUrl} width={60} alt="icon" />{" "}
               <small>
                 <CurrentDay date={weather.date} />
